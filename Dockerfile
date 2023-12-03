@@ -17,4 +17,4 @@ COPY . /app/
 EXPOSE 8080
 
 # Define the command to run your FastAPI application
-CMD gunicorn -w 4 -k uvicorn.workers.UvicornWorker main:app
+gunicorn api:app  --bind 0.0.0.0:8080 --worker-class uvicorn.workers.UvicornWorker
