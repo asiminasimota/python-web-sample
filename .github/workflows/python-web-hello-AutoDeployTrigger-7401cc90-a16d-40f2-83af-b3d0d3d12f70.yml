@@ -5,7 +5,7 @@ on:
   # Automatically trigger it when detected changes in repo
   push:
     branches: 
-      [ master ]
+      none
     paths:
     - '**'
     - '.github/workflows/python-web-hello-AutoDeployTrigger-7401cc90-a16d-40f2-83af-b3d0d3d12f70.yml'
