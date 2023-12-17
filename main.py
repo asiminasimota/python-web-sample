@@ -7,7 +7,7 @@ app = fastapi.FastAPI()
 # method for welcome message for the api at the root
 @app.get("/")
 async def welcome():
-    return "Welcome to the student api using google cloud run"
+    return "Welcome to the student api using python"
 
 
 # method to get all the student data
