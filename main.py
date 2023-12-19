@@ -55,3 +55,14 @@ async def delete_student(student_id: int):
 # uvicorn main:app --reload --port 8080
 # command to create requirements.txt file
 # pip freeze > requirements.txt
+
+if __name__ == "__main__":
+    print("Starting webserver...")
+    uvicorn.run(
+        api,
+        host="0.0.0.0",
+        port=int(os.getenv("PORT", 8080)),
+        debug=os.getenv("DEBUG", False),
+        log_level=os.getenv('LOG_LEVEL', "info"),
+        proxy_headers=True
+    )
