@@ -1,4 +1,4 @@
-import fastapi
+import fastapi,uvicorn
 from student_data import students
 
 app = fastapi.FastAPI()
